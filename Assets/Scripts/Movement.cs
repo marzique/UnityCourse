@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
-{
-    Rigidbody rocketRigidBody;
-    AudioSource audioSource;
+{   
+    // params
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float rotationThrust = 100f;
+    [SerializeField] AudioClip mainEngine;
+
+    // cache
+    Rigidbody rocketRigidBody;
+    AudioSource audioSource;
 
     void Start(){
         rocketRigidBody = GetComponent<Rigidbody>();
@@ -29,7 +33,7 @@ public class Movement : MonoBehaviour
 
             if (!audioSource.isPlaying)
             {
-                audioSource.Play();
+                audioSource.PlayOneShot(mainEngine);
             }
         }
         else {
