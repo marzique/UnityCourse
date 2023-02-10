@@ -188,6 +188,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1a69f6f4a1eefb4c8a5be92ceb091fe, type: 3}
+--- !u!198 &254939864 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7375679199743504755, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+  m_PrefabInstance: {fileID: 691652638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &298377178 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7913763511581466676, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+  m_PrefabInstance: {fileID: 691652638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &691652638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,6 +205,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5853424328649799346, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+      propertyPath: thrustParticles2
+      value: 
+      objectReference: {fileID: 254939864}
+    - target: {fileID: 5853424328649799346, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+      propertyPath: thrustParticles3
+      value: 
+      objectReference: {fileID: 298377178}
     - target: {fileID: 7079888982648227731, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -205,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7079888982648227731, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.67
+      value: 37.55
       objectReference: {fileID: 0}
     - target: {fileID: 7079888982648227731, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -242,6 +260,18 @@ PrefabInstance:
     - target: {fileID: 7079888982648227735, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270941609185269191, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+      propertyPath: m_Name
+      value: Middle Side Thruster Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869245595404844357, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+      propertyPath: m_Name
+      value: Left Side Thruster Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029753232541107328, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
+      propertyPath: m_Name
+      value: Right Side Thruster Particles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49aed0686e9aa554ab72eb575752752f, type: 3}
