@@ -25,10 +25,10 @@ public class CollisionHandler : MonoBehaviour
     }
 
     void Update(){
-        RespondDebugKeys();
+        RespondToDebugKeys();
     }
 
-    void RespondDebugKeys() {
+    void RespondToDebugKeys() {
         if (Input.GetKey(KeyCode.L)) {
             LoadNextLevel();
         } else if (Input.GetKey(KeyCode.C)) {
